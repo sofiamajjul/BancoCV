@@ -34,19 +34,19 @@
   <h1>Cadastre o seu currículo</h1>
   <form id="register-form" action="" method="">  
       <div class="half-box spacing">
-        <label for="name">Nome Completo:<span>*</span></label>
+        <label for="name">Nome Completo<span>*</span></label>
           <input type="text" name="name" id="name" placeholder="Digite o seu nome e sobrenome" data-required>
       </div>
       <div class="half-box">
-          <label for="position">Cargo Pretendido:</label>
-          <input type="text" name="position" id="position" placeholder="Digite o seu objetivo profissional">
+          <label for="position">Cargo Pretendido<span>*</span></label>
+          <input type="text" name="position" id="position" placeholder="Digite o seu objetivo profissional" data-required>
       </div>
       <div class="third-box spacing">
-          <label for="birthdate">Data de Nascimento:<span>*</span></label>
+          <label for="birthdate">Data de Nascimento<span>*</span></label>
           <input type="date" id="birthdate" name="birthdate" data-required>
       </div>
       <div class="third-box spacing">
-          <label for="maritalstatus">Estado Civil:</label>
+          <label for="maritalstatus">Estado Civil</label>
           <select name="maritalstatus">
             <option value="solteire">Living la vida loca</option>
             <option value="casade">Taken</option>
@@ -62,12 +62,36 @@
       </select>
     </div>
     <div class="half-box spacing">
-      <label for="cel">Celular:</label>
-      <input type="phone" name="cel" id="cel" placeholder="Digite o seu celular">
+      <label for="cel">Celular<span>*</span></label>
+      <input type="phone" name="cel" id="cel" placeholder="Digite o seu celular" data-required>
   </div>
   <div class="half-box">
-    <label for="email">E-mail</label>
-    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+    <label for="email">E-mail<span>*</span></label>
+    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required>
+</div>
+<div class="third-box spacing">
+  <label for="cep">CEP<span>*</span></label>
+  <input type="text" id="cep" data-required>
+</div>
+<div class="third-box spacing">
+  <label for="endereco">Endereço</label>
+  <input type="text" id="endereco">
+</div>
+<div class="third-box">
+  <label for="numero">Número</label>
+  <input type="text" id="numero">
+</div>
+<div class="third-box spacing">
+  <label for="bairro">Bairro</label>
+  <input type="text" id="bairro">
+</div>
+<div class="third-box spacing">
+  <label for="cidade">Cidade</label>
+  <input type="text" id="cidade">
+</div>
+<div class="third-box">
+  <label for="estado">Estado</label>
+  <input type="text" id="estado">
 </div>
 <h2>Documentos</h2>
 <div class="half-box spacing">
@@ -100,6 +124,7 @@
 </div>
 <p class="error-validation template"></p>
 <script src="./script.js"></script>
+<script src="../Backend/main.js"></script>
 </body>
 </html>
 </body>

@@ -206,14 +206,19 @@ input {
   margin-bottom: 40px;
 }
 
+#birthdate{
+  color: rgb(94, 92, 92)
+}
+
 select {
   border-bottom: 2px solid #631463;
   padding: 10px;
   font-size: .9rem;
   margin-bottom: 40px;
+  color: rgb(94, 92, 92);
 }
 
-input:focus {
+input:focus, select:focus {
   border-color: #da852d
 }
 
