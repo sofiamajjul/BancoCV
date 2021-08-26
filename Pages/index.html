@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BancoCV</title>
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <img src="../Pictures/Jobs-09.png" alt="Logo" height="50px">
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobsnet</a></li>
+        <li><a href="#">Empresas</a></li>
+      </ul>
+    </div>
+  </nav>
+<div id="home-container">
+  <div class="img"></div>
+  <div class="container">
+    <div class="title">Acreditamos em novas oportunidades</div>
+    <div class="sub_title">Crie seu perfil e transforme o seu futuro</div>
+    <div class="btns">
+      <button id="formulario" onclick="window.location='#form-container'">Comece agora</button>
+    </div>
+  </div>
+</div>
+<div id="form-container">
+  <h1>Cadastre o seu currículo</h1>
+  <form id="register-form" action="" method="">  
+      <div class="half-box spacing">
+        <label for="name">Nome Completo:<span>*</span></label>
+          <input type="text" name="name" id="name" placeholder="Digite o seu nome e sobrenome" data-required>
+      </div>
+      <div class="half-box">
+          <label for="position">Cargo Pretendido:</label>
+          <input type="text" name="position" id="position" placeholder="Digite o seu objetivo profissional">
+      </div>
+      <div class="third-box spacing">
+          <label for="birthdate">Data de Nascimento:</label>
+          <input type="date" id="birthdate" name="birthdate" data-required>
+      </div>
+      <div class="third-box">
+          <label for="maritalstatus">Estado Civil:</label>
+          <select name="maritalstatus">
+            <option value="solteire">Living la vida loca</option>
+            <option value="casade">Taken</option>
+            <option value="separade">Forever alone</option>
+        </select>
+      </div>
+      <div class="third-box">
+        <label for="pronoun">Qual pronome prefere?</label>
+        <select name="pronoun">
+          <option value="fem">Ela</option>
+          <option value="mas">Ele</option>
+          <option value="bin">Elu</option>
+      </select>
+    </div>
+    <div class="half-box spacing">
+      <label for="cel">Celular:</label>
+      <input type="phone" name="cel" id="cel" placeholder="Digite o seu celular">
+  </div>
+  <div class="half-box">
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+</div>
+<h2>Documentos</h2>
+<div class="half-box spacing">
+  <label for="id">Identidade:<span>*</span></label>
+  <input type="text" name="id" id="id" placeholder="Digite o seu número de RG/CRNM/Passaporte" data-required>
+</div>
+<div class="half-box">
+  <label for="cpf"> CPF:<span>*</span></label>
+  <input type="text" for="cpf" id="cpf" name="cpf"  placeholder="Digite seu CPF">
+</div>
+<div class="half-box spacing">
+  <label for="car">Possui Veículo?</label>
+  <select name="car">
+    <option value="sim">Sim</option>
+    <option value="não">Não</option>
+</select>
+</div>
+<div class="half-box">
+  <label for="hab">Habilitação:</label>
+  <select name="hab">
+    <option value="nao_habilitado">Não possui</option>
+    <option value="catA">Categoria A</option>
+    <option value="catB">Categoria B</option>
+</select>
+</div>
+      <div class="full-box">
+          <input type="submit" id="btn-submit" value="Registrar">
+      </div>
+  </form>
+</div>
+<p class="error-validation template"></p>
+<script src="./script.js"></script>
+</body>
+</html>
+</body>
+</html>
