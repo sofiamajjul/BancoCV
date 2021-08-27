@@ -49,7 +49,7 @@
     color: white;
   }
   .img{
-    background: url('../Pictures/diego-ph-fIq0tET6llw-unsplash.jpg')no-repeat;
+    background: url('./Pictures/diego-ph-fIq0tET6llw-unsplash.jpg')no-repeat;
     width: 100%;
     height: 100vh;
     background-size: cover;
