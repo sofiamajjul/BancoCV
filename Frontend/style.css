@@ -226,11 +226,9 @@ input[type="submit"] {
   height: 55px;
   border-radius: 5px;
   border: none;
-  margin: 50px 10px;
   border: 2px solid #631463a9;
   font-size: 20px;
   font-weight: 500;
-  padding: 0 10px;
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
