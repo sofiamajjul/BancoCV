@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API Cadastro candidato",
+      "description": "Api cadastro cv para desafio da Gama Academy",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: nome, genêro, email e cep",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "gender": {
+                      "type": "string"
+                    },
+                    "cep": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                      "name": "Sofia Majjul",
+                      "gender": "ela",
+                      "cep": "00000-000",
+                      "email": "sofiamajjul14@gmail.com"
+                    }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
